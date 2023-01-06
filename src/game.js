@@ -78,6 +78,14 @@ const loop = () => {
 	  
 			points ++;
 			score.text = `Pontuação: ${points}`;
+			enemies.forEach(e =>{
+				e.draw(CTX)
+				e.move(boundaries, 0) 
+
+			if(points%3 == 0) {
+				e.speed +=5;	
+
+			}})
 		  }
 
 		orange.draw(CTX);
