@@ -25,7 +25,7 @@ export default class Hero extends Circle{
 			this.x + this.width/2,
 			this.y + this.height/2,
 			this.size,
-			0,"rgba(0,0,255,.1)"
+			0,"rgba(0,0,255,.0)"
 		)
 
 		this.animeSprite(FRAMES)
